@@ -1,0 +1,32 @@
+/* 只给整个代码块加一个大边框和背景 */
+.markdown-rendered pre,
+.cm-s-obsidian .HyperMD-codeblock {
+  background-color: #e6f9e6 !important; /* 亮调浅绿色护眼背景 */
+  border: 1px solid #88cc88 !important;  /* 同色系亮边框，只包一整个块 */
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  margin: 1em 0 !important;
+}
+
+/* 清除所有行级别的边框和背景 */
+.cm-line.HyperMD-codeblock-bg,
+.markdown-rendered .line {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+  .markdown-rendered pre,
+  .cm-s-obsidian .HyperMD-codeblock {
+    background-color: #2a3a2a !important;
+    border-color: #559955 !important;
+  }
+}
+
+/* 代码字体微调（可选） */
+code, .cm-s-obsidian .cm-line {
+  font-family: 'Consolas', 'Menlo', monospace !important;
+}
